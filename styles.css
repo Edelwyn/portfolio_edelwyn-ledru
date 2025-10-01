@@ -1,0 +1,94 @@
+@font-face {
+  src: url("/fonts/Belgan_Aesthetic.ttf") format('truetype');
+  font-family: "Belgan";
+}
+@font-face {
+  src: url("/fonts/Qalisso.otf") format("opentype");
+  font-family: "Qalisso";
+}
+* {
+    margin : 0;
+}
+body {
+    background-color: #12103A !important;
+    display: flex;
+    flex-direction: column;
+}
+.sectionNom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg{
+    width: 100vw;
+    transform: translate(-35px, -100px);
+}
+nav {
+    background-color: #12103a !important;
+    padding-bottom: 15px; 
+}
+nav ul {
+    margin: 0 50px 0 50px;
+    height: 7vh;
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+.logoDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    width: 5%;
+}
+.titres {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logolines {
+    width: 60%;
+}
+a {
+    color: #FFF9EE;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: "Belgan";
+}
+.titres-longs {
+    padding: 10vh;
+}
+ h2 {
+    color : #BEE6FF; 
+    font-size: 80px;
+    text-align: center;
+    font-family: "Qalisso";
+    padding: 10vh
+}
+.titres img {
+    width: 90%;
+    align-self: flex-start;
+}
+.sectionaPropos {
+    width: 100vw;
+    background-image: url(./imgs/fond_a-propos.jpg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.aboutbg{
+    width: 100%;
+}
+.separation {
+    width: 40%;
+    justify-self: center;
+}
+.text img {
+    width: 40%;
+}
