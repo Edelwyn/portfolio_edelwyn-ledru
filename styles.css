@@ -19,11 +19,8 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.bg{
-    width: 100vw;
-    transform: translate(-35px, -100px);
-}
 nav {
+    width: 100%;
     background-color: #12103a;
     padding-bottom: 15px;
     padding: 10px 0 10px 0;
@@ -34,7 +31,6 @@ nav ul {
     display: flex;
     padding: 10px 0 10px 0;
 }
-
 .logoDiv {
     width: 100%;
     display: flex;
@@ -42,9 +38,10 @@ nav ul {
     align-items: center;
 }
 .logo {
-    position: absolute;
-    width: 5%;
+    width: 10%;
+    transform: translate(50% 0);
 }
+
 .titres {
     width: 55vw;
     display: flex;
@@ -56,9 +53,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.logolines {
-    width: 60%;
+    align-items: center;
 }
 a {
     color: #FFF9EE;
@@ -66,43 +61,66 @@ a {
     text-decoration: none;
     font-family: "Belgan";
 }
-
- h2 {
+.titres img {
+    width: 90%;
+    align-self: flex-start;
+} 
+.containerNom {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    width: 50%;
+    color : #BEE6FF; 
+    font-size: 10vw;
+    text-align: center;
+    font-family: "Qalisso";
+    transform: translate(50%, -215%);
+}
+h2 {
+    width: 100%;
     color : #BEE6FF; 
     font-size: 80px;
     text-align: center;
     font-family: "Qalisso";
-    padding: 5vh;
-    text-decoration: none;
 }
-.titres img {
-    width: 90%;
-    align-self: flex-start;
+.frame {
+    width: 60vw;
+    align-self: center;
+    transform: translate(0, -100%);
+}
+.planete {
+    width: 30vw;
+    transform: translate(-30%, -10%);
 }
 .sectionaPropos {
-    width: 100vw;
+    width: 70vw;
     display: flex;
+    margin: auto;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+    background-image: url(./imgs/fond_a-propos.jpg);
+    background-size: cover;    
 }
-.aboutbg{
+.textContainer {
     width: 100%;
+    margin: 50px;
+}
+p {
+    width: 40%;
+    padding: 30px;
+    background-color: #12103a;
+    border-radius: 30px;
+    color:#FFF9EE;
+    font-size: 35px;
 }
 .separation {
     width: 40%;
     justify-self: center;
 }
-.aboutbg {
-    transform: translateY(500);
-}
 .text img {
-    position: relative;
     width: 60%;
-}
-.textContainer {
-    width: 80%;
-    margin: 50px ;
-}
-.text:nth-child(2) {
-    justify-self: flex-end;
 }
