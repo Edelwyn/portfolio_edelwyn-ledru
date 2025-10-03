@@ -10,7 +10,7 @@
     margin : 0;
 }
 body {
-    background-color: #12103A !important;
+    background-color: #12103A;
     display: flex;
     flex-direction: column;
 }
@@ -48,8 +48,24 @@ nav ul {
     flex-direction: column;
     align-items: flex-start;
 }
+.titres-longs  {
+    position: relative;
+    border-style: none;
+    z-index: 1;
+    border-radius: 50px;
+    overflow: hidden;
+}
+ .titres-longs::before  {
+    content: ' ';
+    position: absolute;
+    background-color: #12103A;
+    inset: 0;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
 .titres-longs {
-    padding: 10vh;
+    padding:30px;
+    margin: 80px 0 80px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,10 +83,10 @@ a {
 } 
 .containerNom {
     max-width: 80%;
+    height: 1200px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: inline;
+    text-align: center;
 }
 h1 {
     width: 50%;
@@ -93,11 +109,12 @@ h2 {
     transform: translate(0, -100%);
 }
 .planete {
-    width: 30vw;
-    transform: translate(-30%, -10%);
+    width: 40vw;
+    transform: translate(-80%, -10%);
 }
 .sectionaPropos {
     width: 70vw;
+    position: relative;
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -105,9 +122,10 @@ h2 {
     background-image: url(./imgs/fond_a-propos.jpg);
     background-size: cover;    
 }
-.textContainer {
-    width: 100%;
-    margin: 50px;
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 p {
     width: 40%;
@@ -119,6 +137,7 @@ p {
 }
 .separation {
     width: 40%;
+    margin: 100px;
     justify-self: center;
 }
 .text img {
