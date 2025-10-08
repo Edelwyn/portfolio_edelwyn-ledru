@@ -73,8 +73,6 @@ nav ul {
     width: 10%;
     transform: translate(50% 0);
 }
-
-
 a {
     width: 50%;
     color: #FFF9EE;
@@ -105,6 +103,7 @@ h2 {
     font-size: 80px;
 }
 h3 {
+    color: #FFF9EE;
     font-size: 35px;
     margin-top: 30px;
 }
@@ -175,6 +174,9 @@ h3 {
     height: 80%;
     max-height: 100vh;
 }
+.projet {
+    transform: translateY(-100px)
+}
 .frameImg {
     width: 100%;
     transform: translateY(5%);
@@ -192,6 +194,7 @@ h3 {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 .containerbar {
     width: 100%;
@@ -221,7 +224,6 @@ h3 {
     height: auto;
     width: 50px;
     filter: drop-shadow(0 0 10px #BEE6FF);
-    mix-blend-mode: add;
 }
 .bar.javascript {
     width: 70%;
@@ -235,4 +237,18 @@ h3 {
 .containerbar h3 {
     margin-left: 16%;
     align-self: flex-start;
+}
+.titres.comp {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+.divLogos {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.icon {
+    margin: 20px;
+    filter: drop-shadow(0 0 5px white);
 }
