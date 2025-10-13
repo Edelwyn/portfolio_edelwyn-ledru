@@ -177,6 +177,9 @@ p {
 .textContainer .text:nth-child(4) {
     align-self: flex-end;
 }
+.sectionNom, .sectionProjets, .sectionContact, .sectionCompetences {
+    width: 100%;
+}
 .sectionProjets {
     padding: 100px 0 100px 0;
     height: 100%;
@@ -232,6 +235,15 @@ p {
     height: 25px;
     border-style: none;
     border-radius: 35px;
+}
+.bar.html {
+    width: 90%;
+}
+.bar.javascript {
+    width: 70%;
+}
+.bar.css {
+    width: 90%;
 }
 .bar.javascript, .bar.html, .bar.css {
     margin: 0;
@@ -461,11 +473,14 @@ p {
         margin: auto;
     }
     h2 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 5px;
     }
+    h3 {
+        font-size: 2rem;
+    }
     p {
-        font-size : 25px;
+        font-size : 20px;
     }
     .textContainer, .sectionaPropos {
         width: 100%;
@@ -480,10 +495,37 @@ p {
     .textContainer .text:nth-child(4), .titres.a-propos:nth-child(3) {
         align-self: center;
     }
-    
     .separation {
-        margin-top: 0;
+        margin: 50px;
         width: 80%;
     }
-
+    .titres.projets, .titres.a-propos  {
+        width: 80%;
+    }
+    .sectionProjets {
+        background-size:100vh;
+        background-color: black;
+        padding: 0;
+    }
+    .imgProjet {
+        width: 90%;
+    }
+    .skillContainer {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerbar {
+        width: 70%;
+        margin: 20px;
+    }
+    .divLogos {
+        width: 80%;
+        text-align: center;
+        display: inline;
+    }
+    .divLogos img {
+        margin: 15px 0 15px 0;
+    }
  }

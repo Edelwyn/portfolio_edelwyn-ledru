@@ -31,27 +31,31 @@ gsap.to(".etoile-4", {
     repeat: -1,
     yoyo: true
 });
-gsap.to('.bar.html', {
-    width: "90%",
+gsap.from('.bar.html', {
+    width: "0%",
+    duration: 0.9,
     ease: "power2.out",
     scrollTrigger: {
         trigger: '.sectionCompetences',
     }
 });
-gsap.to('.bar.javascript', {
-    width: "70%",
-    ease: "elastic.out(1,1)",
+gsap.from('.bar.javascript', {
+    width: "0%",
+    duration: 0.7,
+    ease: "power2.out",
     scrollTrigger: {
         trigger: '.sectionCompetences',
     }
 });
-gsap.to('.bar.css', {
-    width: "90%",
-    ease: "elastic.out(1,1)",
+gsap.from('.bar.css', {
+    width: "0%",
+    duration: 0.5,
+    ease: "power2.out",
     scrollTrigger: {
         trigger: '.sectionCompetences',
     }
 });
+
 gsap.from('.icon', {
     y: "+=50",
     opacity: 0,
