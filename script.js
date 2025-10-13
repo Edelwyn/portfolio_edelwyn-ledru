@@ -31,3 +31,37 @@ gsap.to(".etoile-4", {
     repeat: -1,
     yoyo: true
 });
+gsap.to('.bar.html', {
+    width: "90%",
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: '.sectionCompetences',
+    }
+});
+gsap.to('.bar.javascript', {
+    width: "70%",
+    ease: "elastic.out(1,1)",
+    scrollTrigger: {
+        trigger: '.sectionCompetences',
+    }
+});
+gsap.to('.bar.css', {
+    width: "90%",
+    ease: "elastic.out(1,1)",
+    scrollTrigger: {
+        trigger: '.sectionCompetences',
+    }
+});
+gsap.from('.icon', {
+    y: "+=50",
+    opacity: 0,
+    ease: "elastic.out(1,0.8)",
+    stagger: 0.1,
+    scrollTrigger: {
+        trigger: '.divLogos',
+        markers: false,
+        start: "top 50%",
+        end: "bottom 70%",
+        scrub: 1
+    }
+});

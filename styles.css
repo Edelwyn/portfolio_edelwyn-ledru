@@ -10,18 +10,17 @@
     margin : 0;
 }
 body {
+    width: 100vw;
     background-color: #12103A;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
 }
 .sectionNom {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.sectionNom, .sectionaPropos, .sectionProjets, .sectionCompetences, .sectionContact {
-    width: clamp(70vw, 100%, 100vw);
-    max-width: 1600px;
 }
 nav {
     width: 100%;
@@ -51,6 +50,7 @@ nav {
     margin: 100px 0 100px 0;
 }
 .divSticky {
+    width: 100%;
     position: sticky;
     top: 10%;
     height: 0;
@@ -58,18 +58,6 @@ nav {
 .divEtoiles {
     width: 100%;
     z-index: -1;
-}
-.etoile-1 {
-    transform: scale(0.5) translate(0, 20vw);
-}
-.etoile-2 {
-    transform: scale(0.7) translate(-100%, 20vw);
-}
-.etoile-3 {
-    transform: scale(0.8) translate(50vw, 20vw);
-}
-.etoile-4 {
-    transform: scale(0.6) translate(50vw, 50%);
 }
 .titres.a-propos {
     background-color: #12103A;
@@ -107,7 +95,7 @@ a {
 }
 a:hover {
     color:#393666;
-    box-shadow: inset 0 -70px 0 -1px #BEE6FF;
+    box-shadow: inset 0 -70px 0 0 #BEE6FF;
     border-radius: 10px 10px 0 0;
 }
 .containerNom {
@@ -127,10 +115,12 @@ h1 {
     width: 50%;
     font-size: 10vw;
     transform: translate(50%, -250%);
+    max-width: 1100px;
 }
 h2 {
     width: 100%;
     font-size: 80px;
+    
 }
 h3 {
     color: #FFF9EE;
@@ -141,7 +131,6 @@ p {
     color: #FFF9EE;
     font-family: "Belgan";
     font-size: 30px;
-    text-align: center;
     display: flex;
     align-items: center;
 }
@@ -189,6 +178,7 @@ p {
     align-self: flex-end;
 }
 .sectionProjets {
+    padding: 100px 0 100px 0;
     height: 100%;
     background-image: url("./imgs/fond_projets.jpg");
     background-repeat: no-repeat;
@@ -228,7 +218,7 @@ p {
     margin: 50px;
 }
 .containerbar {
-    width: 100%;
+    width: 20%;
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -237,7 +227,7 @@ p {
 }
 .bar {
     margin: 15px;
-    width: 70%;
+    width: 100%;
     background-color: white;
     height: 25px;
     border-style: none;
@@ -256,17 +246,7 @@ p {
     width: 50px;
     filter: drop-shadow(0 0 10px #BEE6FF);
 }
-.bar.javascript {
-    width: 70%;
-}
-.bar.html {
-    width: 95%;
-}
-.bar.css {
-    width: 90%;
-}
 .containerbar h3 {
-    margin-left: 16%;
     align-self: flex-start;
 }
 .titres.comp {
@@ -352,3 +332,158 @@ p {
     content:url(./imgs/phone-alt.png);
     margin: 0 15px 0 15px;
 }
+@media screen and (max-width: 1230px) { 
+    .divEtoiles{
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .etoile-1, .etoile-2, .etoile-3, .etoile-4 {
+        position: absolute;
+    }
+    .etoile-1 {
+        transform: scale(0.5); left: 0; top: 100px;
+    }
+    .etoile-2 {
+        top: 200px; left: 5%; transform: scale(0.3);
+    }
+    .etoile-3 {
+        top: 80px; left: 80%; transform: scale(0.4);
+    }
+    .etoile-4 {
+       left: 75%;  transform: scale(0.3);
+    } 
+ }
+    @media screen and (min-width: 1230px) {
+        .divEtoiles{
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .etoile-1, .etoile-2, .etoile-3, .etoile-4 {
+        position: absolute;
+    }
+    .etoile-1 {
+        transform: scale(0.7); left: 0; top: 100px;
+    }
+    .etoile-2 {
+        top: 200px; left: 5%; transform: scale(0.3);
+    }
+    .etoile-3 {
+        top: 80px; left: 85%; transform: scale(0.6);
+    }
+    .etoile-4 {
+       left: 75%;  transform: scale(0.5);
+    } 
+ }
+  @media screen and (max-width: 850px) {
+    .divSticky {
+        width: 100%;
+        text-align: center;
+    } 
+    .divEtoiles{
+        width: 100%;
+        position: sticky;
+    }
+    .etoile-1, .etoile-2, .etoile-3, .etoile-4 {
+        position: absolute;
+    }
+    .etoile-1 {
+        transform: scale(0.4); top: 60px;
+    }
+    .etoile-2 {
+        top: 100px; transform: scale(0.3);
+    }
+    .etoile-3 {
+        top: 50px; left: 70%; transform: scale(0.4);
+    }
+    .etoile-4 {
+       left: 65%;  transform: scale(0.3);
+    } 
+    a {
+        font-size: clamp(2rem, 2.5rem, 3rem);
+    }
+    .sectionaPropos {
+        padding: 0;
+    }  
+    .containerNom {
+        margin-bottom: 0;
+    }
+    .separation {
+        margin-top: 0;
+    }
+ }
+ @media screen and (max-width: 400px) {
+    html {
+        overflow-x: hidden;
+    }
+    .divSticky {
+        display: none;
+    } 
+    a {
+        font-size: 1rem;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: #12103a00;
+    }
+    .logoDiv, ul {
+        display: inline;
+        float: left;
+    }
+    .liens {
+        display: none;
+    }
+    .sectionNom { 
+        width: 100%;
+        height: 50vh;
+    }
+    .sectionaPropos {
+        padding: 0;
+    }  
+    .containerNom {
+        margin-bottom: 0;
+    }
+    .frame {
+        width: 80vw;
+        transform: translate(0, -110%);
+    }
+    .planete {
+        width: 80vw;
+        transform: translateX(-50%);
+    }
+    h1 {
+        width: 80%;
+        font-size: 15vw;
+        transform: translateY(-240%);
+        text-align: center;
+        margin: auto;
+    }
+    h2 {
+        font-size: 4rem;
+        margin: 5px;
+    }
+    p {
+        font-size : 25px;
+    }
+    .textContainer, .sectionaPropos {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+    .textContainer {
+        margin: 0 0 50px 0;
+    }
+    .textContainer .text:nth-child(4), .titres.a-propos:nth-child(3) {
+        align-self: center;
+    }
+    
+    .separation {
+        margin-top: 0;
+        width: 80%;
+    }
+
+ }
