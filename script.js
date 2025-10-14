@@ -79,3 +79,7 @@ gsap.from('.icon', {
     }
 });
 //composante vue
+let carousel = Vue.createApp({
+
+});
+carousel.mount("#carousel");
