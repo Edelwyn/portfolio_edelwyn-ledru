@@ -199,7 +199,6 @@ p {
 }
 .imgProjet {
     width: 50%;
-    max-height: 100vh;
 }
 .projet {
     transform: translateY(-100px)
@@ -255,7 +254,7 @@ p {
 .bar.html::after, .bar.css::after, .bar.javascript::after {
     content:url("./imgs/etoile_comp.png");
     height: auto;
-    width: 50px;
+    width: clamp(20px, 40px, 50px);
     filter: drop-shadow(0 0 10px #BEE6FF);
 }
 .containerbar h3 {
@@ -324,7 +323,7 @@ p {
     align-items: center;
 }
 .divContact {
-    width: 50%;
+    width: clamp(55%, 65%, 80%);
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
@@ -335,14 +334,14 @@ p {
 .mail, .phone {
     margin: 0 10px 0 10px;
 }
+.mail::before, .phone::before {
+    margin: 0 15px 0 15px;
+}
 .mail::before {
     content: url(./imgs/envelope.png);
-    display: inline-block;
-    margin: 0 15px 0 15px;
 }
 .phone::before {
     content:url(./imgs/phone-alt.png);
-    margin: 0 15px 0 15px;
 }
 @media screen and (max-width: 1230px) { 
     .divEtoiles{
@@ -365,6 +364,20 @@ p {
     .etoile-4 {
        left: 75%;  transform: scale(0.3);
     } 
+    .sectionProjets {
+        padding: 0;
+        background-size: 140%;
+    }
+    .imgProjet {
+        width: 70%;
+    }
+    .containerNom {
+        height: clamp(20vh, 30vh, 80vh);
+    }
+    .separation {
+        width: 70%;
+    }
+
  }
     @media screen and (min-width: 1230px) {
         .divEtoiles{
@@ -387,6 +400,9 @@ p {
     .etoile-4 {
        left: 75%;  transform: scale(0.5);
     } 
+    .sectionProjets {
+        padding: 50px;
+    }
  }
   @media screen and (max-width: 850px) {
     .divSticky {
@@ -401,10 +417,10 @@ p {
         position: absolute;
     }
     .etoile-1 {
-        transform: scale(0.4); top: 60px;
+        transform: scale(0.4); top: 60px; left: -10%;
     }
     .etoile-2 {
-        top: 100px; transform: scale(0.3);
+        top: 100px; transform: scale(0.3); left: -5%;
     }
     .etoile-3 {
         top: 50px; left: 70%; transform: scale(0.4);
@@ -424,8 +440,46 @@ p {
     .separation {
         margin-top: 0;
     }
+    .divContact {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionProjets {
+        padding: 0;
+        background-size: 170%;
+    }
+    .imgProjet {
+        width: 60%;
+    }
+    .titres.comp {
+        width: 80%;
+    }
+    h2 {
+        font-size: 3.5rem;;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .separation {
+        width: 60%;
+    }
+    a {
+        font-size: 2rem;
+    }
+    .skillContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerbar {
+        width: 70%;
+    }
+    .containerNom {
+        height: 80vh;
+    }
  }
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 500px) {
     html {
         overflow-x: hidden;
     }
@@ -489,6 +543,9 @@ p {
         display: flex;
         align-items: center;
     }
+    .titres.comp {
+        width: 80%;
+    }
     .textContainer {
         margin: 0 0 50px 0;
     }
@@ -527,5 +584,6 @@ p {
     }
     .divLogos img {
         margin: 15px 0 15px 0;
+        width: 35%;
     }
  }

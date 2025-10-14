@@ -33,26 +33,35 @@ gsap.to(".etoile-4", {
 });
 gsap.from('.bar.html', {
     width: "0%",
-    duration: 0.9,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: '.sectionCompetences',
+        trigger: '.containerbar',
+        scrub: 1.5,
+        markers: false,
+        start: "top 50%",
+        end: "bottom 100%"
     }
 });
 gsap.from('.bar.javascript', {
     width: "0%",
-    duration: 0.7,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: '.sectionCompetences',
+        trigger: '.containerbar',
+        scrub: 1,
+        markers: false,
+        start: "top 50%",
+        end: "bottom 100%"
     }
 });
 gsap.from('.bar.css', {
     width: "0%",
-    duration: 0.5,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: '.sectionCompetences',
+        trigger: '.containerbar',
+        scrub: 1.3,
+        markers: false,
+        start: "top 50%",
+        end: "bottom 100%"
     }
 });
 
@@ -69,3 +78,4 @@ gsap.from('.icon', {
         scrub: 1
     }
 });
+//composante vue
