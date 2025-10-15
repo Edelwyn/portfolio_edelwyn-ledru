@@ -1,20 +1,83 @@
 [
   {
-    "id": 1,
-    "title": "Titre du projet 1",
-    "category": "3d",
-    "images": ["./chemin/vers/votre/img.jpg"]
-    
+    "title": "Métamorphose",
+    "category": "Vidéo",
+    "structure": "Équipe",
+    "members": [
+      "Jessica Théorêt", 
+      "Sabrina Gagné",
+      "Edelwyn Ledru"
+    ],
+    "images": [
+      "./videos/Metamorphose.mp4",
+      "./imgs/photo_tournage_metamorphose-1.jpg",
+      "./imgs/photo_tournage_metamorphose-2.jpg"
+    ],
+    "software": "Davinci Resolve",
+    "shortdesc": "Métamorphose est une vidéo qui présente une femme qui vit dans un monde triste et isolé qui décide de prendre action et de choisir d'être heureuse.",
+    "projectdesc": "Réaliser une vidéo macro avec le corps humain comme sujet.",
+    "desc": "Conceptualiser les idées, assurer la bonne direction du projet & tournage"
   },
   {
-    "id": 2,
-    "title": "Titre du projet 2",
-    "category": "video",
+    "title": "La réflection perdue",
+    "category": "Vidéo",
+    "structure": "Équipe",
+    "members": [
+      "Jessica Théorêt", 
+      "Sabrina Gagné",
+      "Edelwyn Ledru"
+    ],
+    "image": "./videos/version_moaique_reflection_perdue.mp4",
+    "software": "Davinci Resolve",
+    "shortdesc": "Projet avec plusieurs écrans avec une fille dans le train qui se retrouve à changer de monde en lisant son livre et finit par sauver une partie d'elle qu'elle a perdue.",
+    "projectdesc": " Projet sur plusieurs écrans et une télévision. Essayer de raconter une histoire en intégrant l'intelligence artificielle.",
+    "desc": "Conceptualisation, Montage"
+  },
+  {
+    "title": "Océan éternel",
+    "category": "3d",
+    "structure": "Équipe",
+    "members": [
+      "Nour Hatwik", 
+      "Jessica Théorêt", 
+      "Yasmine Onekeo", 
+      "Marie-lili Laprise", 
+      "Edelwyn Ledru"
+    ],
     "images": [
-        "./chemin/vers/votre/img2-1.jpg",
-        "./chemin/vers/votre/img2-2.jpg",
-        "./chemin/vers/votre/img2-3.jpg"
-        ]
-    
+      "./imgs/rendu4.jpg",
+      "./imgs/rendu5.jpg",
+      "./imgs/rendu6.jpg"
+    ],
+    "software": "Autodesk Maya",
+    "shortdesc": "Une scène 3d qui met à l'avant une grotte humide avec des ruines abandonnées où habite un dragon.",
+    "projectdesc": " Modéliser une scène 3d ayant un aspect hors de l'ordinaire.",
+    "desc": "Les pilliers, les champignons, conceptualisation. J'ai aussi aidé pour l'éclairage."
+  },
+    {
+    "title": "Pacman",
+    "category": "3d",
+    "structure": "Individuel",
+    "images": "./videos/projet_pacman.mp4",
+    "software": "Autodesk Maya",
+    "shortdesc": "Courte vidéo de pacman qui se déplace dans un monde pixelisé",
+    "projectdesc": " Animer en 3d avec des techniques d'animation génératives",
+    "desc": "Animation 3d puis le montage audio."
+  },
+    {
+    "title": "Refonte du site web de Guzzo",
+    "category": "Design Graphique",
+    "structure": "Équipe",
+    "members": [
+      "Sabrina Gagné", 
+      "Jade Hébert",
+      "Edelwyn Ledru"
+    ],
+    "images": ["./videos/projet_pacman.mp4",
+  ""],
+    "software": "Figma",
+    "shortdesc": "Faire une refonte d'un site web dans le secteur des arts pour améliorer le design et le flux d'information",
+    "projectdesc": "Une refonte du site web de Guzzo pour une meilleure expérience utilisateur",
+    "desc": "La page d'accueil et la conceptualisation"
   }
 ]
