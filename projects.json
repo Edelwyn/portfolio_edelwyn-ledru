@@ -73,8 +73,10 @@
       "Jade Hébert",
       "Edelwyn Ledru"
     ],
-    "images": ["./videos/projet_pacman.mp4",
-  ""],
+    "images": ["./imgs/Accueil.jpg",
+      "./imgs/a_laffiche.jpg", 
+      "./imgs/Films_3d.jpg", 
+     "./imgs/Forfaits.jpg"],
     "software": "Figma",
     "shortdesc": "Faire une refonte d'un site web dans le secteur des arts pour améliorer le design et le flux d'information",
     "projectdesc": "Une refonte du site web de Guzzo pour une meilleure expérience utilisateur",

@@ -114,7 +114,7 @@ h1, h2, h3 {
 h1 {
     width: 50%;
     font-size: 10vw;
-    transform: translate(50%, -250%);
+    transform: translate(50%, -225%);
     max-width: 1100px;
 }
 h2 {
@@ -177,7 +177,7 @@ p {
 .textContainer .text:nth-child(4) {
     align-self: flex-end;
 }
-.sectionNom, .sectionProjets, .sectionContact, .sectionCompetences {
+.sectionNom, .sectionProjets, .sectionContact, .sectionCompetences,.containerApropos {
     width: 100%;
 }
 .sectionProjets {
@@ -198,13 +198,47 @@ p {
     width: 50%;
 }
 .imgProjet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-}
-.projet {
-    transform: translateY(-100px)
+    height : 100%;
+    margin-bottom: 100px;
 }
 .frameImg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1;
+     pointer-events: none;
+}
+.carousel-inner, .carousel-item {
+  height: 100%;
+}
+#carousel {
+    width: 85%;
+    margin: 0 auto;
+}
+#carousel img, #carousel video {
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+#carousel, #carousel img, #carousel video {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.imgContainer {
+    width: 600px;
+    min-width: 300px;
+    display: inline-block;
+    border-style: none;
+    border-radius: 50%;
+    aspect-ratio: 1/1;   
+    overflow: hidden;
 }
 .sectionCompetences {
     display: flex;
@@ -377,7 +411,6 @@ p {
     .separation {
         width: 70%;
     }
-
  }
     @media screen and (min-width: 1230px) {
         .divEtoiles{
@@ -450,7 +483,7 @@ p {
         background-size: 170%;
     }
     .imgProjet {
-        width: 60%;
+        width: 80%;
     }
     .titres.comp {
         width: 80%;
@@ -562,10 +595,10 @@ p {
     .sectionProjets {
         background-size:100vh;
         background-color: black;
-        padding: 0;
+        padding: 50px 0 50px 0;
     }
     .imgProjet {
-        width: 90%;
+        width: 80%;
     }
     .skillContainer {
         width: 100vw;
