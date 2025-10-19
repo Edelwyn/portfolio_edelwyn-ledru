@@ -1,3 +1,4 @@
+//animations des étoiles
 gsap.to(".etoile-1", {
     duration: 2,
     y: "+=10",
@@ -30,6 +31,7 @@ gsap.to(".etoile-4", {
     repeat: -1,
     yoyo: true
 });
+//animations des barres de compétences
 gsap.from('.bar.html', {
     width: "0%",
     ease: "power2.out",
@@ -63,7 +65,7 @@ gsap.from('.bar.css', {
         end: "bottom 100%"
     }
 });
-
+//animation des icones
 gsap.from('.icon', {
     y: "+=50",
     opacity: 0,
@@ -91,7 +93,6 @@ let carousel = Vue.createApp({
             .then(data => data.json())
             .then(projet => { // Attendre que les données soient converties
                 this.projetsArr = projet; //remplace le null
-                console.log(projet.images);
             });
     },
     methods: {

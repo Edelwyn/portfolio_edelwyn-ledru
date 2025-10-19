@@ -90,13 +90,23 @@
               aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
 
           <div class="carousel-inner">
-            <div class="carousel-item active" v-for="projet in projetsArr">
-              <div class="imgContainer"><img :src="projet.images[0]"></div>
+            <div class="carousel-item" v-for="(projet, index) in projetsArr" :key="projet.id"
+              :class="{ active: index === 0 }">
+              <div class="imgContainer">
+                <template v-if="projet.images[0].endsWith('.mp4')">
+                  <!-- Vérifie que ce qui est dans le tableau fini par .mp4-->
+                  <video :src="projet.images[0]" autoplay muted loop playsinline></video>
+                  <!-- Joue la vidéo quand la slide est active-->
+                </template>
+                <template v-else>
+                  <img :src="projet.images[0]" :alt="projet.title"> <!-- Sinon, montre le 1ere image du tableau -->
+                </template>
+              </div>
               <div class="carousel-caption d-none d-md-block">
                 <h3>{{ projet.title }}</h3>
                 <h3>{{ projet.category }}</h3>
