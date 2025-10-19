@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Métamorphose",
     "category": "Vidéo",
     "structure": "Équipe",
@@ -9,9 +10,9 @@
       "Edelwyn Ledru"
     ],
     "images": [
-      "./videos/Metamorphose.mp4",
-      "./imgs/photo_tournage_metamorphose-1.jpg",
-      "./imgs/photo_tournage_metamorphose-2.jpg"
+      "videos/Metamorphose.mp4",
+      "imgs/photo_tournage_metamorphose-1.jpg",
+      "imgs/photo_tournage_metamorphose-2.jpg"
     ],
     "software": "Davinci Resolve",
     "shortdesc": "Métamorphose est une vidéo qui présente une femme qui vit dans un monde triste et isolé qui décide de prendre action et de choisir d'être heureuse.",
@@ -19,6 +20,7 @@
     "desc": "Conceptualiser les idées, assurer la bonne direction du projet & tournage"
   },
   {
+    "id": 2,
     "title": "La réflection perdue",
     "category": "Vidéo",
     "structure": "Équipe",
@@ -27,13 +29,14 @@
       "Sabrina Gagné",
       "Edelwyn Ledru"
     ],
-    "image": "./videos/version_moaique_reflection_perdue.mp4",
+    "images": ["videos/version_moaique_reflection_perdue.mp4"],
     "software": "Davinci Resolve",
     "shortdesc": "Projet avec plusieurs écrans avec une fille dans le train qui se retrouve à changer de monde en lisant son livre et finit par sauver une partie d'elle qu'elle a perdue.",
     "projectdesc": " Projet sur plusieurs écrans et une télévision. Essayer de raconter une histoire en intégrant l'intelligence artificielle.",
     "desc": "Conceptualisation, Montage"
   },
   {
+    "id": 3,
     "title": "Océan éternel",
     "category": "3d",
     "structure": "Équipe",
@@ -45,9 +48,9 @@
       "Edelwyn Ledru"
     ],
     "images": [
-      "./imgs/rendu4.jpg",
-      "./imgs/rendu5.jpg",
-      "./imgs/rendu6.jpg"
+      "imgs/rendu4.jpg",
+      "imgs/rendu5.jpg",
+      "imgs/rendu6.jpg"
     ],
     "software": "Autodesk Maya",
     "shortdesc": "Une scène 3d qui met à l'avant une grotte humide avec des ruines abandonnées où habite un dragon.",
@@ -55,16 +58,18 @@
     "desc": "Les pilliers, les champignons, conceptualisation. J'ai aussi aidé pour l'éclairage."
   },
     {
+    "id": 4,
     "title": "Pacman",
     "category": "3d",
     "structure": "Individuel",
-    "images": "./videos/projet_pacman.mp4",
+    "images": ["videos/projet_pacman.mp4"],
     "software": "Autodesk Maya",
     "shortdesc": "Courte vidéo de pacman qui se déplace dans un monde pixelisé",
     "projectdesc": " Animer en 3d avec des techniques d'animation génératives",
     "desc": "Animation 3d puis le montage audio."
   },
     {
+    "id": 5,
     "title": "Refonte du site web de Guzzo",
     "category": "Design Graphique",
     "structure": "Équipe",
@@ -73,10 +78,10 @@
       "Jade Hébert",
       "Edelwyn Ledru"
     ],
-    "images": ["./imgs/Accueil.jpg",
-      "./imgs/a_laffiche.jpg", 
-      "./imgs/Films_3d.jpg", 
-     "./imgs/Forfaits.jpg"],
+    "images": ["imgs/Accueil.jpg",
+      "imgs/a_laffiche.jpg", 
+      "imgs/Films_3d.jpg", 
+     "imgs/Forfaits.jpg"],
     "software": "Figma",
     "shortdesc": "Faire une refonte d'un site web dans le secteur des arts pour améliorer le design et le flux d'information",
     "projectdesc": "Une refonte du site web de Guzzo pour une meilleure expérience utilisateur",

@@ -151,22 +151,30 @@ p {
     background-size: cover;
     padding: 100px 0 200px 0;
 }
-.text {
+.text p {
+    background-color: #12103a;
     width: 60%;
     padding: 30px;
-    background-color: #12103a;
     border-radius: 30px;
     color:#FFF9EE;
     font-family: "Belgan";
     font-size: 30px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .separation {
     width: 40%;
     margin: 100px;
     justify-self: center;
 }
-.text img {
-    width: 60%;
+.photoMoi {
+    width: 400px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 35px;
 }
 .textContainer {
     width: 80%;;
@@ -176,6 +184,9 @@ p {
 }
 .textContainer .text:nth-child(4) {
     align-self: flex-end;
+}
+.containerApropos {
+    display: flex;
 }
 .sectionNom, .sectionProjets, .sectionContact, .sectionCompetences,.containerApropos {
     width: 100%;
@@ -215,6 +226,7 @@ p {
 }
 .carousel-inner, .carousel-item {
   height: 100%;
+  position: relative;
 }
 #carousel {
     width: 85%;
@@ -224,18 +236,8 @@ p {
     width: 100%;
    height: 100%;
    object-fit: cover;
-   display: block;
-}
-#carousel, #carousel img, #carousel video {
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }
 .imgContainer {
-    width: 600px;
-    min-width: 300px;
-    display: inline-block;
-    border-style: none;
     border-radius: 50%;
     aspect-ratio: 1/1;   
     overflow: hidden;

@@ -52,17 +52,17 @@
     <img src="./imgs/lignes_separation.png" class="separation" />
     <div class="textContainer">
       <div class="containerApropos">
-        <div class="titres a-propos">
-          <h2>À propos de moi</h2>
-          <img src="/imgs/ligne_titre.png" class="lignes" />
-        </div>
         <div class="text">
+          <div class="titres a-propos">
+            <h2>À propos de moi</h2>
+            <img src="/imgs/ligne_titre.png" class="lignes" />
+          </div>
           <p>
             Future diplômée en Intégration Multimédia, intéressée par la 3d, le
             design, le web et la vidéo. J'aime aussi tout ce qui touche à l'art.
           </p>
         </div>
-        <img class="photoMoi">
+        <img class="photoMoi" src="./imgs/photo_moi.jpg">
       </div>
       <div class="titres a-propos">
         <h2>Objectif de carrière</h2>
@@ -82,67 +82,38 @@
       <h2>Mes projets</h2>
       <img src="/imgs/ligne_titre.png" class="lignes" />
     </div>
-    <h3>Catégorie</h3>
     <div class="imgProjet">
+      <div id="app">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+          </div>
 
-      <div id="carousel" class="carousel slide">
-
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+          <div class="carousel-inner">
+            <div class="carousel-item active" v-for="projet in projetsArr">
+              <div class="imgContainer"><img :src="projet.images[0]"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h3>{{ projet.title }}</h3>
+                <h3>{{ projet.category }}</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <img src="imgs/frame_img.png" class="frameImg" />
         </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="imgContainer"><img src="./imgs/rendu5.jpg" alt="..."></div>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First slide label</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="imgContainer">
-              <video class="d-block " autoplay loop muted playsinline>
-                <source src="./videos/Metamorphose.mp4" type="video/mp4" alt="..." />
-              </video>
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second slide label</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="imgContainer"> <video class="d-block" autoplay loop muted playsinline>
-                <source src="./videos/version_moaique_reflection_perdue.mp4" type="video/mp4" alt="..." />
-              </video>
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third slide label</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="imgContainer"> <video class="d-block w-100" autoplay loop muted playsinline>
-                <source src="./videos/projet_pacman.mp4" type="video/mp4" alt="..." />
-              </video>
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third slide label</h3>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <img src="imgs/frame_img.png" class="frameImg" />
       </div>
-
     </div>
   </div>
   <div class="sectionCompetences">
@@ -207,11 +178,12 @@
     <p class="messageFin">
       Merci d'avoir visité mon petit monde,<br> cordialement, Edelwyn
     </p>
-    <p>
-    <p>
-      TIM - 2025
-    </p>
-    </p>
+    <footer>
+      <p>
+        TIM - 2025
+      </p>
+      <a href="./index-en.html">English</a>
+    </footer>
   </div>
   <script src="script.js" difer></script>
 </body>
