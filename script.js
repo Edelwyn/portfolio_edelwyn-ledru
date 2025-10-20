@@ -93,6 +93,7 @@ let carousel = Vue.createApp({
             .then(data => data.json())
             .then(projet => { // Attendre que les données soient converties
                 this.projetsArr = projet; //remplace le null
+                console.log(projet[0].title);
             });
     },
     methods: {
