@@ -33,18 +33,30 @@
         </ul>
       </nav>
     <div id="app">
-        <h2>Nom du projet</h2>
-    <div class="descriptionContainer" v-for="projet in projetArr">
+      <div class="descriptionContainer" v-for="projet in projetsArr">
+        <h2>{{projet.title}}</h2>
         <div class="row">
             <div class="col-6">
-                <img src="" class="projetImg">
+                <img :src="projet.images[0]" class="projetImg">
             </div>
             <div class="col-6">
-                <p>Lorem ipsum</p>
+                <p>{{projet.shortdesc}}</p>
             </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <h4>{{projet.structure}}</h4>
+            </div>
+            <div class="col-3">
+              <p>{{projet.members}}</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      
     </div>
-    </div>
+      
     <script src="script.js" difer></script>
 </body>
 
