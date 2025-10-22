@@ -35,7 +35,7 @@
     <div id="app">
       <div class="descriptionContainer" v-for="projet in projetsArr">
         <h2>{{projet.title}}</h2>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-6">
                 <img :src="projet.images[0]" class="projetImg">
             </div>
@@ -49,14 +49,17 @@
               <h4>{{projet.structure}}</h4>
             </div>
             <div class="col-3">
-              <p>{{projet.members}}</p>
+              <li v-for="(member, i) in projet.members" :key="i">{{member}}</li>
             </div>
           </div>
       </div>
+      <div class="photoProjets">
+        <div class="imgDiv">
+          <img v-for="image in projet.images" :src="image">
+        </div>
       </div>
-      
+      </div>
     </div>
-      
     <script src="script.js" difer></script>
 </body>
 

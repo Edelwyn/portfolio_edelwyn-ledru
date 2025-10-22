@@ -99,7 +99,7 @@ a:hover {
     border-radius: 10px 10px 0 0;
 }
 .containerNom {
-    height: 450px;
+    min-height: 450px;
     max-height: 100vh;
     text-align: center;
     margin-bottom: 100px;
@@ -120,7 +120,6 @@ h1 {
 h2 {
     width: 100%;
     font-size: 80px;
-    
 }
 h3 {
     color: #FFF9EE;
@@ -212,7 +211,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height : 100%;
     margin: 50px 0 100px 0;
 }
@@ -398,6 +397,20 @@ p {
 .descriptionContainer {
     width: 70vw;
     margin: auto;
+}
+.photoProjets {
+    width: 70vw;
+}
+.imgDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auot-fill, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+.imgDiv img {
+    width: 100%;
+    border-radius: 35px;
 }
 @media screen and (max-width: 1230px) { 
     .divEtoiles{

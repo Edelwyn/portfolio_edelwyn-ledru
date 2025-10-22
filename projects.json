@@ -10,9 +10,9 @@
       "Edelwyn Ledru"
     ],
     "images": [
-      "videos/Metamorphose.mp4",
-      "imgs/photo_tournage_metamorphose-1.jpg",
-      "imgs/photo_tournage_metamorphose-2.jpg"
+      "./videos/Metamorphose.mp4",
+      "./imgs/photo_tournage_metamorphose-1.jpg",
+      "./imgs/photo_tournage_metamorphose-2.jpg"
     ],
     "software": "Davinci Resolve",
     "shortdesc": "Métamorphose est une vidéo qui présente une femme qui vit dans un monde triste et isolé qui décide de prendre action et de choisir d'être heureuse.",
@@ -29,7 +29,7 @@
       "Sabrina Gagné",
       "Edelwyn Ledru"
     ],
-    "images": ["videos/version_moaique_reflection_perdue.mp4"],
+    "images": ["./videos/version_moaique_reflection_perdue.mp4"],
     "software": "Davinci Resolve",
     "shortdesc": "Projet avec plusieurs écrans avec une fille dans le train qui se retrouve à changer de monde en lisant son livre et finit par sauver une partie d'elle qu'elle a perdue.",
     "projectdesc": " Projet sur plusieurs écrans et une télévision. Essayer de raconter une histoire en intégrant l'intelligence artificielle.",
@@ -48,9 +48,9 @@
       "Edelwyn Ledru"
     ],
     "images": [
-      "imgs/rendu4.jpg",
-      "imgs/rendu5.jpg",
-      "imgs/rendu6.jpg"
+      "./imgs/rendu4.jpg",
+      "./imgs/rendu5.jpg",
+      "./imgs/rendu6.jpg"
     ],
     "software": "Autodesk Maya",
     "shortdesc": "Une scène 3d qui met à l'avant une grotte humide avec des ruines abandonnées où habite un dragon.",

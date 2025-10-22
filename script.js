@@ -106,6 +106,7 @@ let app = Vue.createApp({
         return {
             message: "Chargement...",
             projetsArr: null,
+
         };
     },
     mounted() {
@@ -121,7 +122,6 @@ let app = Vue.createApp({
             });
     },
     methods: {
-        // ...
     }
 });
 app.mount("#app");
