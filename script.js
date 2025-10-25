@@ -93,7 +93,7 @@ let carousel = Vue.createApp({
             .then(data => data.json())
             .then(projet => { // Attendre que les données soient converties
                 this.projetsArr = projet; //remplace le null
-                console.log(projet.title);
+                console.log(projet.images);
             });
     },
     methods: {
@@ -101,27 +101,3 @@ let carousel = Vue.createApp({
     }
 });
 carousel.mount("#carouselApp");
-let app = Vue.createApp({
-    data() {
-        return {
-            message: "Chargement...",
-            projetsArr: null,
-
-        };
-    },
-    mounted() {
-        this.message = "Vue a été chargé et montée au DOM (mounted) !";
-        fetch("./projects.json") // L'adresse URL
-            .then(data => data.json())
-            .then(projet => { // Attendre que les données soient converties
-                this.projetsArr = projet; //remplace le null
-                console.log(projet);
-            })
-            .catch(error => {
-            
-            });
-    },
-    methods: {
-    }
-});
-app.mount("#app");

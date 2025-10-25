@@ -98,9 +98,11 @@
             <div class="carousel-item" v-for="(projet, index) in projetsArr" :key="projet.id"
               :class="{ active: index === 0 }">
               <div class="imgContainer">
-                <template v-if="projet.images[0].endsWith('.mp4')">
+                <template v-if="projet.images[0].endsWith('?')">
                   <!-- Vérifie que ce qui est dans le tableau fini par .mp4-->
-                  <video :src="projet.images[0]" autoplay muted loop playsinline></video>
+                  <iframe :src="projet.images[0]" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   <!-- Joue la vidéo quand la slide est active-->
                 </template>
                 <template v-else>
@@ -112,6 +114,7 @@
                 <h3>{{ projet.category }}</h3>
               </div>
             </div>
+            <img src="imgs/frame_img.png" class="frameImg" />
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,7 +124,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-          <img src="imgs/frame_img.png" class="frameImg" />
+
         </div>
       </div>
     </div>

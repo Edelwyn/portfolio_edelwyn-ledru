@@ -10,7 +10,7 @@
       "Edelwyn Ledru"
     ],
     "images": [
-      "./videos/Metamorphose.mp4",
+      "https://www.youtube.com/embed/CjIlOsu9d6M?",
       "./imgs/photo_tournage_metamorphose-1.jpg",
       "./imgs/photo_tournage_metamorphose-2.jpg"
     ],
@@ -29,7 +29,7 @@
       "Sabrina Gagné",
       "Edelwyn Ledru"
     ],
-    "images": ["./videos/version_moaique_reflection_perdue.mp4"],
+    "images": ["https://www.youtube.com/embed/bIS5C4LsR2E?"],
     "software": "Davinci Resolve",
     "shortdesc": "Projet avec plusieurs écrans avec une fille dans le train qui se retrouve à changer de monde en lisant son livre et finit par sauver une partie d'elle qu'elle a perdue.",
     "projectdesc": " Projet sur plusieurs écrans et une télévision. Essayer de raconter une histoire en intégrant l'intelligence artificielle.",
@@ -59,10 +59,10 @@
   },
     {
     "id": 4,
-    "title": "Pacman",
+    "title": "3d Pacman",
     "category": "3d",
     "structure": "Individuel",
-    "images": ["videos/projet_pacman.mp4"],
+    "images": ["https://www.youtube.com/embed/2xwFa3dLsDI?"],
     "software": "Autodesk Maya",
     "shortdesc": "Courte vidéo de pacman qui se déplace dans un monde pixelisé",
     "projectdesc": " Animer en 3d avec des techniques d'animation génératives",
