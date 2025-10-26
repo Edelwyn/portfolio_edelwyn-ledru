@@ -65,6 +65,39 @@ gsap.from('.bar.css', {
         end: "bottom 100%"
     }
 });
+gsap.from('.bar.video', {
+    width: "0%",
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: '.containerbar',
+        scrub: 1,
+        markers: false,
+        start: "top 50%",
+        end: "bottom 100%"
+    }
+});
+gsap.from('.bar.modelisation', {
+    width: "0%",
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: '.containerbar',
+        scrub: 1,
+        markers: false,
+        start: "top 50%",
+        end: "bottom 100%"
+    }
+});
+gsap.from('.bar.design', {
+    width: "0%",
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: '.containerbar',
+        scrub: 1,
+        markers: false,
+        start: "top 50%",
+        end: "bottom 100%"
+    }
+});
 //animation des icones
 gsap.from('.icon', {
     y: "+=50",
