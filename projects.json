@@ -1,13 +1,16 @@
 [
   {
     "id": 1,
+    "english": false,
+    "made": "Fait avec :",
+    "wasAsked": "Ce qui était demandé",
     "title": "Métamorphose",
     "category": "Vidéo",
     "structure": "Équipe",
     "members": [
-      "Jessica Théorêt", 
-      "Sabrina Gagné",
-      "Edelwyn Ledru"
+      "Jessica Théorêt - Monteuse vidéo", 
+      "Sabrina Gagné - Monteuse Sonore",
+      "Edelwyn Ledru - Conceptrice"
     ],
     "images": [
       "https://www.youtube.com/embed/CjIlOsu9d6M?",
@@ -15,37 +18,43 @@
       "./imgs/photo_tournage_metamorphose-2.jpg"
     ],
     "software": "Davinci Resolve",
-    "shortdesc": "Métamorphose est une vidéo qui présente une femme qui vit dans un monde triste et isolé qui décide de prendre action et de choisir d'être heureuse.",
+    "shortdesc": "Métamorphose est une vidéo qui présente une femme qui vit dans un monde triste et isolé qui choisit d'être heureuse.",
     "projectdesc": "Réaliser une vidéo macro avec le corps humain comme sujet.",
-    "desc": "Conceptualiser les idées, assurer la bonne direction du projet & tournage"
+    "desc": "Mon intention était de montrer qu'on a pas besoin de laisser nos cicatrices contrôler notre vie. En étant la réalisatrice, je me suis assurée que le message soit transmis à travers les séquences."
   },
   {
     "id": 2,
+    "english": false,
+    "made": "Fait avec :",
+    "wasAsked": "Ce qui était demandé",
     "title": "La réflection perdue",
-    "category": "Vidéo",
+    "category": "Video",
     "structure": "Équipe",
     "members": [
-      "Jessica Théorêt", 
-      "Sabrina Gagné",
-      "Edelwyn Ledru"
+      "Jessica Théorêt - Monteuse vidéo", 
+      "Sabrina Gagné - Monteuse sonore",
+      "Edelwyn Ledru - Réalisatrice, conceptrice"
     ],
     "images": ["https://www.youtube.com/embed/bIS5C4LsR2E?"],
     "software": "Davinci Resolve",
-    "shortdesc": "Projet avec plusieurs écrans avec une fille dans le train qui se retrouve à changer de monde en lisant son livre et finit par sauver une partie d'elle qu'elle a perdue.",
+    "shortdesc": "Projet avec plusieurs écrans : une fille dans un train qui se retrouve à changer de monde en lisant son livre et finit par sauver une partie d'elle qu'elle a perdue.",
     "projectdesc": " Projet sur plusieurs écrans et une télévision. Essayer de raconter une histoire en intégrant l'intelligence artificielle.",
-    "desc": "Conceptualisation, Montage"
+    "desc": "J'ai proposé un concept ayant une touche plus surnaturelle pour sortir des sentiers battus et me donner un défi de raconter comment quelqu'un se sauve lui-même."
   },
   {
     "id": 3,
+    "english": false,
+    "made": "Fait avec :",
+    "wasAsked": "Ce qui était demandé",
     "title": "Océan éternel",
     "category": "3d",
     "structure": "Équipe",
     "members": [
-      "Nour Hatwik", 
-      "Jessica Théorêt", 
-      "Yasmine Onekeo", 
-      "Marie-lili Laprise", 
-      "Edelwyn Ledru"
+      "Nour Hatwik - Modélisatrice", 
+      "Jessica Théorêt - Modélisatrice", 
+      "Yasmine Onekeo - Modélisatrice ", 
+      "Marie-lili Laprise - Modélisatrice", 
+      "Edelwyn Ledru - Modélisatrice"
     ],
     "images": [
       "./imgs/rendu4.jpg",
@@ -55,36 +64,152 @@
     "software": "Autodesk Maya",
     "shortdesc": "Une scène 3d qui met à l'avant une grotte humide avec des ruines abandonnées où habite un dragon.",
     "projectdesc": " Modéliser une scène 3d ayant un aspect hors de l'ordinaire.",
-    "desc": "Les pilliers, les champignons, conceptualisation. J'ai aussi aidé pour l'éclairage."
+    "desc": "Le concept sort de l'ordinaire avec des poissons flottants et fluorescents, des champignons qui brillent dans le noir et des ruines pour ajouter un côté mystérieux. J'ai modélisé les champignons et les piliers."
   },
     {
     "id": 4,
+    "english": false,
+    "made": "Fait avec :",
     "title": "3d Pacman",
+    "wasAsked": "Ce qui était demandé",
     "category": "3d",
     "structure": "Individuel",
     "images": ["https://www.youtube.com/embed/2xwFa3dLsDI?"],
-    "software": "Autodesk Maya",
+    "software": "Autodesk Maya, Davinci Resolve",
     "shortdesc": "Courte vidéo de pacman qui se déplace dans un monde pixelisé",
     "projectdesc": " Animer en 3d avec des techniques d'animation génératives",
-    "desc": "Animation 3d puis le montage audio."
+    "desc": "En explorant les différentes techniques, il y en a une qui m'a fait penser à des pixels. De là, j'ai pensé à pacman qui nagerait dans des pixels, comme si il sortait du monde 2D."
   },
     {
     "id": 5,
+    "english": false,
+    "wasAsked": "Ce qui était demandé",
+    "made": "Fait avec :",
     "title": "Refonte du site web de Guzzo",
     "category": "Design Graphique",
     "structure": "Équipe",
     "members": [
-      "Sabrina Gagné", 
-      "Jade Hébert",
-      "Edelwyn Ledru"
+      "Sabrina Gagné - Designeuse", 
+      "Jade Hébert - Designeuse",
+      "Edelwyn Ledru - Designeuse, Conceptrice"
     ],
-    "images": ["imgs/Accueil.jpg",
+    "images": ["imgs/guzzo_design_avant.png",
+      "imgs/guzzo_design_avant_2.png",
+      "imgs/Accueil.jpg",
       "imgs/a_laffiche.jpg", 
       "imgs/Films_3d.jpg", 
-     "imgs/Forfaits.jpg"],
+     "imgs/Forfaits.jpg"
+    ],
     "software": "Figma",
-    "shortdesc": "Faire une refonte d'un site web dans le secteur des arts pour améliorer le design et le flux d'information",
-    "projectdesc": "Une refonte du site web de Guzzo pour une meilleure expérience utilisateur",
-    "desc": "La page d'accueil et la conceptualisation"
+    "shortdesc": "Faire une refonte d'un site web dans le domaine des arts pour améliorer le design et le flux d'information",
+    "projectdesc": "Une refonte du site web de Guzzo pour une meilleure expérience utilisateur.",
+    "desc": "Le site avait grandement besoin d'une meilleure mise en page. Nous nous sommes assurées que chaque information ait son propre espace pour que ce soit moins surchargé visuellement. J'ai réalisé la page d'accueil."
+  },
+  {
+    "id": 1,
+    "english": true,
+    "wasAsked": "What was expected",
+    "made": "Made with :",
+    "title": "Metamorphosis",
+    "category": "Video",
+    "structure": "Team",
+    "members": [
+      "Jessica Théorêt - Video editor", 
+      "Sabrina Gagné - Sound editor",
+      "Edelwyn Ledru - Director"
+    ],
+    "made": "Made with :",
+    "images": [
+      "https://www.youtube.com/embed/CjIlOsu9d6M?",
+      "./imgs/photo_tournage_metamorphose-1.jpg",
+      "./imgs/photo_tournage_metamorphose-2.jpg"
+    ],
+    "software": "Davinci Resolve",
+    "shortdesc": "Metamorphosis is a video who presents a girl living in a gloomy and isolated world who decides to stop letting it control her life and self worth.",
+    "projectdesc": "Film a macro video with the human body as the subject.",
+    "desc": "My intention was to express the message that we dont have to let our scars affect our lives. As the director, I made sure the clips were expressing it."
+  },
+  {
+    "id": 2,
+    "english": true,
+    "wasAsked": "What was expected",
+    "made": "Made with :",
+    "title": "The lost reflection",
+    "category": "Video",
+    "structure": "Team",
+    "members": [
+      "Jessica Théorêt - Video editor", 
+      "Sabrina Gagné - Sound editor",
+      "Edelwyn Ledru - Director"
+    ],
+    "images": ["https://www.youtube.com/embed/bIS5C4LsR2E?"],
+    "software": "Davinci Resolve",
+    "shortdesc": "Project with multiple screens who tells a story about a girl living her daily life, coming back from her day at work but shifts worlds and end up saving a part of herself that was lost.",
+    "projectdesc": " Project on multiple screens who tells a story and integrates artificial Intelligence.",
+    "desc": "I suggested a concept that was both supernatural and a challenge to make something new who tells a story about someone saving themselves."
+  },
+  {
+    "id": 3,
+    "english": true,
+    "wasAsked": "What was expected",
+    "made": "Made with :",
+    "title": "Eternal Ocean",
+    "category": "3D",
+    "structure": "Team",
+    "members": [
+      "Nour Hatwik - Modeler", 
+      "Jessica Théorêt - Modeler", 
+      "Yasmine Onekeo - Modeler ", 
+      "Marie-lili Laprise - Modeler", 
+      "Edelwyn Ledru - Modeler"
+    ],
+    "images": [
+      "./imgs/rendu4.jpg",
+      "./imgs/rendu5.jpg",
+      "./imgs/rendu6.jpg"
+    ],
+    "software": "Autodesk Maya",
+    "shortdesc": "A 3D scene who shows a humid cave with a dragon living in abandoned ruins.",
+    "projectdesc": " 3D model a scene with an aspect out of the ordinary.",
+    "desc": "The concept is out of the ordinary with the floating and glowing fishes, glowing mushrooms and the pillars added a touch of mystery. I made the mushrooms and pillars."
+  },
+    {
+    "id": 4,
+    "english": true,
+    "title": "3d Pacman",
+    "wasAsked": "What was expected",
+    "made": "Made with :",
+    "category": "3D",
+    "structure": "Individual",
+    "images": ["https://www.youtube.com/embed/2xwFa3dLsDI?"],
+    "software": "Autodesk Maya, Davinci Resolve",
+    "shortdesc": "Short video of Pacman moving through a world of pixels.",
+    "projectdesc": " 3D animate using a generative animation technique.",
+    "desc": "By exploring the different techniques, one of them made me think of pixels. From there, I thought of Pacman swimming through the pixels, as if it got out of the 2D world."
+  },
+    {
+    "id": 5,
+    "english": true,
+    "made": "Made with :",
+    "title": "Guzzo website redesign",
+    "category": "Graphic Design",
+    "wasAsked": "What was expected",
+    "structure": "Team",
+    "members": [
+      "Sabrina Gagné - Designer", 
+      "Jade Hébert - Designer",
+      "Edelwyn Ledru - Designer, Director"
+    ],
+    "images": ["imgs/guzzo_design_avant.png",
+      "imgs/guzzo_design_avant_2.png",
+      "imgs/Accueil.jpg",
+      "imgs/a_laffiche.jpg", 
+      "imgs/Films_3d.jpg", 
+     "imgs/Forfaits.jpg"
+    ],
+    "software": "Figma",
+    "shortdesc": "A redesign of the website of Guzzo for a better user experience.",
+    "projectdesc": "Do a redesign of a website related to the arts for a better information flow.",
+    "desc": "The website needed a better flow as everything felt overloaded and close together. We made sure to leave space for each information and make it easy to have access to it. I made the home page."
   }
 ]

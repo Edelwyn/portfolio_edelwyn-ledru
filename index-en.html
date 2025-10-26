@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edelwyn Ledru - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" difer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div class="liens">
+                <a href="/projet.html">PROJECTS</a>
+                <img src="/imgs/ligne_titre.png" class="lignes a" />
+            </div>
+            <div class="liens">
+                <a href="/index.html">FRANÇAIS</a>
+                <img src="/imgs/ligne_titre.png" class="lignes a" />
+            </div>
+            <div class="logoDiv">
+                <a href="index.html"><img src="./imgs/signature.png" class="logo" /></a>
+            </div>
+            <div class="liens">
+                <a href="#contact">CONTACT</a>
+                <img src="/imgs/ligne_titre.png" class="lignes a" />
+            </div>
+        </ul>
+    </nav>
+    <div class="divSticky">
+        <div class="divEtoiles">
+            <img src="./imgs/etoile.png" class="etoile-1">
+            <img src="./imgs/etoile.png" class="etoile-2">
+            <img src="./imgs/etoile.png" class="etoile-3">
+            <img src="./imgs/etoile.png" class="etoile-4">
+        </div>
+    </div>
+    <div class="sectionNom">
+        <div class="containerNom">
+            <img src="./imgs/planete.png" class="planete" />
+            <img src="./imgs/frame.png" class="frame" />
+            <h1>EDELWYN LEDRU</h1>
+        </div>
+    </div>
+    <div class="sectionaPropos">
+        <img src="./imgs/lignes_separation.png" class="separation" />
+        <div class="textContainer">
+            <div class="containerApropos">
+                <div class="text">
+                    <div class="titres a-propos">
+                        <h2>About me</h2>
+                        <img src="/imgs/ligne_titre.png" class="lignes" />
+                    </div>
+                    <p>
+                        Future College graduate in Multimedia, interested in 3d, design, web developpement and video, as
+                        well as a
+                        lover for anything artsy. I also like content creation for about 10 years soon.
+                    </p>
+                </div>
+                <img class="photoMoi" src="./imgs/photo_moi.jpg">
+            </div>
+            <div class="titres a-propos">
+                <h2>Career goal</h2>
+                <img src="/imgs/ligne_titre.png" class="lignes" />
+            </div>
+            <div class="text">
+                <p>
+                    I would like to consistently nurture my creativity to stand out and create original designs.
+                    The definition of creativity
+                    is to make links between things that was not there to begin with. It is an approach I want to work
+                    by in my career.
+                </p>
+            </div>
+        </div>
+        <img src="./imgs/lignes_separation.png" class="separation" />
+    </div>
+    <div class="sectionProjets">
+        <div class="titres projets">
+            <h2>My projects</h2>
+            <img src="/imgs/ligne_titre.png" class="lignes" />
+        </div>
+        <div class="imgProjet">
+            <div id="carouselApp">
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item" v-for="(projet, index) in projetsArr" :key="projet.id"
+                            :class="{ active: index === 0 }">
+                            <div class="imgContainer">
+                                <template v-if="projet.images[0].endsWith('?')">
+                                    <!-- Vérifie que ce qui est dans le tableau fini par .mp4-->
+                                    <iframe :src="projet.images[0]" title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <!-- Joue la vidéo quand la slide est active-->
+                                </template>
+                                <template v-else>
+                                    <img :src="projet.images[0]" :alt="projet.title">
+                                    <!-- Sinon, montre le 1ere image du tableau -->
+                                </template>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>{{ projet.title }}</h3>
+                                <h3>{{ projet.category }}</h3>
+                            </div>
+                        </div>
+                        <img src="imgs/frame_img.png" class="frameImg" />
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sectionCompetences">
+        <img src="./imgs/lignes_separation.png" class="separation" />
+        <div class="titres comp">
+            <h2>Skills</h2>
+            <img src="/imgs/ligne_titre.png" class="lignes" />
+        </div>
+        <div class="skillContainer">
+            <div class="containerbar">
+                <h3>Javascript</h3>
+                <div class="bar">
+                    <div class="bar javascript"></div>
+                </div>
+            </div>
+            <div class="containerbar">
+                <h3>HTML 5</h3>
+                <div class="bar">
+                    <div class="bar html"></div>
+                </div>
+            </div>
+            <div class="containerbar">
+                <h3>CSS</h3>
+                <div class="bar">
+                    <div class="bar css"></div>
+                </div>
+            </div>
+        </div>
+        <div class="titres comp">
+            <h2>Softwares learned</h2>
+            <img src="/imgs/ligne_titre.png" class="lignes" />
+        </div>
+        <div class="divLogos">
+            <img src="./imgs/ae_icon.png" class="icon ae">
+            <img src="./imgs/ps_icon.png" class="icon ps">
+            <img src="./imgs/ai_icon.png" class="icon ai">
+            <img src="./imgs/clip_studio.png" class="icon clip">
+            <img src="./imgs/lr_icon.png" class="icon lr">
+            <img src="./imgs/figma_icon.png" class="icon fig">
+            <img src="./imgs/github_icon.png" class="icon git">
+            <img src="./imgs/davinci_icon.png" class="icon davinci">
+            <img src="./imgs/touchdesigner_logo.png" class="icon touch">
+            <img src="./imgs/maya_icon.png" class="icon maya">
+            <img src="./imgs/vscode_icon.png" class="icon vs">
+            <img src="./imgs/unity_icon_136074 1.png" class="icon unity">
+        </div>
+    </div>
+    <div class="sectionContact" id="contact">
+        <img src="./imgs/lignes_separation.png" class="separation" />
+        <h2>You'd like to reach out ?</h2>
+        <h3>With pleasure !</h3>
+        <div class="divContact">
+            <p class="mail">
+                edelwynledru06@gmail.com
+            </p>
+            <p class="phone">
+                514-707-9840
+            </p>
+        </div>
+        <p class="messageFin">
+            Thank you for visiting my small world,<br>Edelwyn
+        </p>
+        <footer>
+            <p>
+                TIM - 2025
+            </p>
+            <a href="./index.html">Français</a>
+        </footer>
+    </div>
+    <script src="script.js" difer></script>
+</body>
+
+</html>

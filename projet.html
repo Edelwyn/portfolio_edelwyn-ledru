@@ -16,15 +16,23 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body id="app">
   <nav>
     <ul>
       <div class="liens">
         <a href="/projet.html">PROJETS</a>
         <img src="/imgs/ligne_titre.png" class="lignes a" />
       </div>
+      <div class="liens">
+        <a href="/projet.html" @click.prevent="isEnglish = true">ENGLISH</a>
+        <img src="/imgs/ligne_titre.png" class="lignes a" />
+      </div>
       <div class="logoDiv">
-        <img src="./imgs/signature.png" class="logo" />
+        <a href="index.html"><img src="./imgs/signature.png" class="logo" /></a>
+      </div>
+      <div class="liens">
+        <a href="/projet.html" @click.prevent="isEnglish = false">FRANÇAIS</a>
+        <img src="/imgs/ligne_titre.png" class="lignes a" />
       </div>
       <div class="liens">
         <a href="index.html#Contact">CONTACT</a>
@@ -32,9 +40,12 @@
       </div>
     </ul>
   </nav>
-  <div id="app">
-    <div class="descriptionContainer" v-for="projet in projetsArr">
-      <h2>{{projet.title}}</h2>
+  <div>
+    <div class="descriptionContainer" v-for="projet in displayedProjets" :key="projet.id">
+      <div class="titres projets">
+        <h2>{{projet.title}}</h2>
+        <img src="/imgs/ligne_titre.png" class="lignes" />
+      </div>
       <div class="description row align-items-center">
         <div class="col-12">
           <p>{{projet.shortdesc}}</p>
@@ -42,20 +53,19 @@
       </div>
       <div class="container">
         <div class="description row justify-content-center">
-          <h4>Ce qui était demandé</h4>
+          <h4>{{projet.wasAsked}}</h4>
           <p>{{projet.projectdesc}}</p>
           <p>{{projet.desc}}</p>
         </div>
         <div class="membres row justify-content-around">
-          <div class="col-4 ">
+          <div class=" col-12 col-sm-6 structure">
             <h4>{{projet.structure}}</h4>
             <li v-for="(member, i) in projet.members" :key="i">{{member}}</li>
           </div>
-          <div class="col-4 ">
-            <h4>Fait avec :</h4>
-            <p>{{projet.software}}</p>
+          <div class="col-12 col-sm-6 logiciel">
+            <h4>{{projet.made}}</h4>
+            <li>{{projet.software}}</li>
           </div>
-
         </div>
         <div class="imgWrapper">
           <div class="imgDiv">
@@ -70,9 +80,7 @@
             </template>
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
   <script src="scriptProjet.js"></script>
