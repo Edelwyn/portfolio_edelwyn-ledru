@@ -12,7 +12,8 @@ let app = Vue.createApp({
         fetch("./projects.json") // L'adresse URL
             .then(data => data.json())
             .then(projet => { // Attendre que les données soient converties
-                this.projetsArr = projet; //remplace le null par le tableau donne par le fetch
+                this.projetsArr = projet //remplace le null par le tableau donne par le fetch
+                console.log(projet.moodboard);
             })
             .catch(error => {
                 

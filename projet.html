@@ -39,8 +39,8 @@
         <img src="/imgs/ligne_titre.png" class="lignes a" />
       </div>
     </ul>
-  </nav>
-    <div class="descriptionContainer" v-for="projet in displayedProjets" :key="projet.id">
+  </nav><!-- boucle pour chaque projet-->
+    <div class="descriptionContainer" v-for="projet in displayedProjets" :key="projet.id"> 
       <div class="titres projets">
         <h2>{{projet.title}}</h2>
         <img src="/imgs/ligne_titre.png" class="lignes" />
@@ -73,13 +73,28 @@
                 title="Video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe>
+              </iframe><!--Si le fichier inclue youtube, il montre une vidéo pour chaque projet qui contient youtube. Sinon, c'est des images-->
               <img v-else :src="file" :alt="projet.title" class="imageHover" @mouseenter="animationEnter($event)"
                 @mouseleave="animationLeave($event)" />
             </template>
           </div>
         </div>
-      </div>
+      </div>  
+    </div>
+    <div class="sectionProcessus">
+        <h2>Le processus</h2>
+        <h3>Le Brainstorm/Moodboard</h3>
+          <img src="./imgs/image_moodboard.png" class="moodboard">
+          <p></p><!-- parler du brainstorm, des idées, des consignes-->
+        <h3>L'arborescence</h3>
+          <img src="./imgs/arborescence.png" class="arborescence">
+          <p></p>
+        <h3>Maquettes filaires</h3>
+          <img src="./imgs/maquettes_filaires.png" class="filaires">
+          <p></p> 
+        <h3>Maquettes graphiques</h3>
+          <img src="./imgs/maquettes_graphiques.png" class="graphiques">
+          <p></p> <!-- parler des choix stylistiques-->
     </div>
   <script src="scriptProjet.js"></script>
 </body>
