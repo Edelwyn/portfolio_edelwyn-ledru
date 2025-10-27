@@ -26,7 +26,6 @@ nav {
     top: 0;
     background-color: #12103a;
     padding-bottom: 15px;
-    margin: 10px 0 10px 0;
     z-index: 1;
 }
 .lignes.a {
@@ -150,6 +149,7 @@ h4 {
 }
 .sectionaPropos {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;    
     background-image: url(./imgs/fond_a-propos.jpg);
@@ -182,7 +182,6 @@ h4 {
     border-radius: 35px;
 }
 .textContainer {
-    width: 80%;;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -193,8 +192,10 @@ h4 {
 .containerApropos {
     display: flex;
 }
- .sectionProjets, .sectionContact, .sectionCompetences,.containerApropos {
+ .sectionProjets, .sectionContact, .sectionCompetences,.textContainer {
     width: 100%;
+    max-width: 1800px;
+    margin: auto;
 }
 .sectionProjets {
     padding: 100px 0 100px 0;
@@ -243,7 +244,6 @@ h4 {
     z-index: 10;
     pointer-events: none;
 }
-
 .imgContainer {
     display: flex;
     position: relative;
@@ -386,7 +386,8 @@ h4 {
 }
 #app {
     width: 100%;
-    height: 90vh;
+    min-height: 100vh;
+    height: auto;
 }
 .descriptionContainer {
     width: 100%;
@@ -730,5 +731,36 @@ h4 {
     }
     .photoMoi {
         width: 80%;
+    }
+ }
+ @media screen and (min-width: 1600px) {
+    .sectionNom {
+        height: 100vh;
+    }
+ }
+ @media screen and (min-width: 1400px) {
+    .sectionNom {
+        height: 60vh;
+    }
+ }
+ @media screen and (min-width: 2000px) {
+    .sectionNom {
+        height: 100vh;
+    }
+    h1 {
+        transform: translate(65%, -215%);
+    }
+    .titres.a-propos {
+        width: 70%;
+    }
+    .textContainer {
+        display: flex;
+        justify-content: center;
+    }
+    .descriptionContainer {
+        width: 90%;
+    }
+    .imgDiv {
+        width: 90%;
     }
  }

@@ -15,7 +15,7 @@ let app = Vue.createApp({
                 this.projetsArr = projet; //remplace le null par le tableau donne par le fetch
             })
             .catch(error => {
-
+                
             });
     },
     computed: {

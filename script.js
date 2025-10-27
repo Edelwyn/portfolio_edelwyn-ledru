@@ -128,9 +128,6 @@ let carousel = Vue.createApp({
                 this.projetsArr = projet; //remplace le null
                 console.log(projet.images);
             });
-    },
-    methods: {
-        // ...
     }
 });
 carousel.mount("#carouselApp");
