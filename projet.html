@@ -66,7 +66,7 @@
             <li>{{projet.software}}</li>
           </div>
         </div>
-        <div class="imgWrapper">
+        <div class="imgWrapper" id="imgDiv">
           <div class="imgDiv">
             <template v-for="(file, index) in projet.images" :key="index">
               <iframe v-if="file.includes('youtube') || file.includes('youtu.be')" :src="file" class="videoProjet"
@@ -84,17 +84,27 @@
     <div class="sectionProcessus">
         <h2>Le processus</h2>
         <h3>Le Brainstorm/Moodboard</h3>
-          <img src="./imgs/image_moodboard.png" class="moodboard">
-          <p></p><!-- parler du brainstorm, des idées, des consignes-->
+          <img src="./imgs/image_moodboard.png">
+          <p>Durant le brainstorm, nous avions toutes fait nos planches d'inspirations individuellement. Ensuite, nous avons fait un mélange des idées de nous trois et 
+            des idées qu'on préfère dans un moodboard final. Nos inspirations étaient principalement Spiderman, l'esthétique rétro et futuristique. Nous avons aussi ajouté 
+            des éléments qui correspondent au cinéma. Par exemple, le rouleau film avec des films à l'affiche et le clin d'oeil du générique d'UNIVERSAL studios.
+          </p>
         <h3>L'arborescence</h3>
-          <img src="./imgs/arborescence.png" class="arborescence">
-          <p></p>
+          <img src="./imgs/arborescence.png">
+          <p>Ensuite, il faut penser à la navigation du site. Quelle lien mène à quelle page? Ça permet d'éviter de se perdre dans le site et de regrouper les
+            informations similaires dans une même page.</p>
         <h3>Maquettes filaires</h3>
-          <img src="./imgs/maquettes_filaires.png" class="filaires">
-          <p></p> 
+          <img src="./imgs/maquettes_filaires.png">
+          <p>La prochaine étape était les maquettes filaires. C'est l'étape où on planifie quel élément va où, comment organiser les informations
+            dans la page, etc. C'est aussi plus facile de visualiser la structure quand c'est le moment de l'intégration HTML/CSS.
+          </p> 
         <h3>Maquettes graphiques</h3>
-          <img src="./imgs/maquettes_graphiques.png" class="graphiques">
-          <p></p> <!-- parler des choix stylistiques-->
+          <img src="./imgs/maquettes_graphiques.png">
+          <p>
+            Les maquettes graphiques est l'étape où on fait le design final des pages. On fait attention au détails, on ajoute les images et on donne de la vie au site.
+            On a eu l'idée d'ajouter des boules avec des dégradés parce que ça fait penser à des planètes et ça fait allusion aux titres des pages inspirés du générique d'
+            UNIVERSAL. 
+          </p>
     </div>
   <script src="scriptProjet.js"></script>
 </body>
