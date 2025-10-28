@@ -104,6 +104,7 @@
           </div>
 
           <div class="carousel-inner">
+            <p v-show="messageError"></p>
             <div class="carousel-item" v-for="(projet, index) in projetsArr" :key="projet.id"
               :class="{ active: index === 0 }">
               <div class="imgContainer">
