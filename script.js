@@ -118,6 +118,7 @@ let app = Vue.createApp({
         return {
             message: "Chargement...",
             messageError: "Désolé, petit problème technique !",
+            messageErrorEn: "Sorry! Technical issues.",
             projetsArr: [],
             isEnglish: false
         };

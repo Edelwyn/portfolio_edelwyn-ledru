@@ -66,7 +66,7 @@
       max-width: 800px;
       margin: auto;
   }
-  img {
+  img, iframe {
       border-radius: 35px;
   }
   nav ul {
@@ -574,7 +574,7 @@
       }
       .sectionProjets {
           padding: 0;
-          background-size: 130%;
+          background-size: 180%;
       }
       .imgProjet {
           width: 75%;
@@ -735,11 +735,16 @@
           width: 100%;
       }
       .photoMoi {
-          width: 80%;
+          width: 60%;
       }
       .sectionProcessus img {
           width: 100%;
       }
+      .mail,
+  .phone {
+    margin: 10px 0;
+    justify-content: center;
+    font-size: 1.5rem;
    }
    @media screen and (min-width: 1600px) {
       .sectionNom {
