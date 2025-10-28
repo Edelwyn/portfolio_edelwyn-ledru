@@ -16,6 +16,7 @@
       flex-direction: column;
       overflow-x: hidden;
       align-items: center;
+      margin: auto;
   }
   .sectionNom {
       height: 80vh;
@@ -199,7 +200,6 @@
    .sectionProjets, .sectionContact, .sectionCompetences,.textContainer {
       width: 100%;
       max-width: 1800px;
-      margin: auto;
   }
   .sectionProjets {
       padding: 100px 0 100px 0;
@@ -223,8 +223,6 @@
       justify-content: center;
       align-items: center;
       margin: 50px 0 100px 0;
-      border-radius: 50%;
-      overflow: hidden;
   }
   .carousel-inner {
       overflow: hidden;
@@ -235,7 +233,7 @@
       z-index: 0;
   }
   #carousel {
-      margin: 0 auto;
+      margin: auto;
   }
   #carousel img, #carousel iframe {
       width: 100%;
@@ -251,6 +249,7 @@
   .imgContainer {
       display: flex;
       position: relative;
+      width: 100%;
       border-radius: 50%;
       aspect-ratio: 1/1;   
       overflow: hidden;
@@ -390,7 +389,6 @@
   }
   #app {
       width: 100%;
-      min-height: 100vh;
       height: auto;
   }
   .descriptionContainer {
@@ -513,9 +511,6 @@
       .etoile-4 {
          left: 75%;  transform: scale(0.5);
       } 
-      .sectionProjets {
-          padding: 50px;
-      }
       .imgProjet {
           width: 45%;
       }
@@ -581,7 +576,7 @@
           padding: 0;
           background-size: 130%;
       }
-      .imgProjet, #carouselApp {
+      .imgProjet {
           width: 75%;
       }
       .titres.comp {
@@ -763,8 +758,11 @@
       .sectionNom {
           height: 100vh;
       }
+      .sectionProjets {
+        height: 100vh;
+      }
       h1 {
-          transform: translate(65%, -215%);
+          transform: translate(50%, -215%);
       }
       .titres.a-propos {
           width: 70%;
