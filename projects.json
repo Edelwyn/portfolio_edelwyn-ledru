@@ -95,9 +95,9 @@
     ],
     "images": ["imgs/guzzo_design_avant.png",
       "imgs/guzzo_design_avant_2.png",
-      "imgs/Accueil.jpg",
+      "imgs/accueil.jpg",
       "imgs/a_laffiche.jpg", 
-      "imgs/Films_3d.jpg", 
+      "imgs/films_3d.jpg", 
      "imgs/forfaits.jpg"
     ],
     "software": "Figma",
@@ -201,7 +201,7 @@
     ],
     "images": ["imgs/guzzo_design_avant.png",
       "imgs/guzzo_design_avant_2.png",
-      "imgs/Accueil.jpg",
+      "imgs/accueil.jpg",
       "imgs/a_laffiche.jpg", 
       "imgs/films_3d.jpg", 
      "imgsforfaits.jpg"
