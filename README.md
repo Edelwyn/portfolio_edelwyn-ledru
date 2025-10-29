@@ -2,4 +2,4 @@
 ## Choix de navigation : <br>
 Carousel Planète
 ## Choix composante vue : <br>
-Compétences animées
+Carousel
