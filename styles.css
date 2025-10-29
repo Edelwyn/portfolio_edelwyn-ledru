@@ -517,6 +517,9 @@
       .sectionNom {
           height: 70vh;
       }
+      .textContainer {
+        width: 80%;
+      }
    }
     @media screen and (max-width: 850px) {
       .logoDiv {
@@ -740,12 +743,12 @@
       .sectionProcessus img {
           width: 100%;
       }
-      .mail,
-  .phone {
+      .mail, .phone {
     margin: 10px 0;
     justify-content: center;
     font-size: 1.5rem;
    }
+}
    @media screen and (min-width: 1600px) {
       .sectionNom {
           height: 100vh;
