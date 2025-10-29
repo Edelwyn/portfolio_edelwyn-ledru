@@ -21,91 +21,99 @@
     <ul>
       <div class="liens">
         <a href="/projet.html">PROJETS</a>
-        <img src="/imgs/ligne_titre.png" class="lignes a" />
+        <img src="imgs/ligne_titre.png" class="lignes a" />
       </div>
       <div class="liens">
         <a href="/projet.html" @click.prevent="isEnglish = true">ENGLISH</a>
-        <img src="/imgs/ligne_titre.png" class="lignes a" />
+        <img src="imgs/ligne_titre.png" class="lignes a" />
       </div>
       <div class="liens">
         <a href="/projet.html" @click.prevent="isEnglish = false">FRANÇAIS</a>
-        <img src="/imgs/ligne_titre.png" class="lignes a" />
+        <img src="imgs/ligne_titre.png" class="lignes a" />
       </div>
       <div class="liens">
         <a href="index.html#Contact">CONTACT</a>
-        <img src="/imgs/ligne_titre.png" class="lignes a" />
+        <img src="imgs/ligne_titre.png" class="lignes a" />
       </div>
       <div class="logoDiv">
         <a href="index.html"><img src="./imgs/signature.png" class="logo" /></a>
       </div>
     </ul>
   </nav><!-- boucle pour chaque projet-->
-    <div class="descriptionContainer" v-for="projet in displayedProjets" :key="projet.id"> 
-      <div class="titres projets">
-        <h2>{{projet.title}}</h2>
-        <img src="/imgs/ligne_titre.png" class="lignes" />
-      </div>
-      <div class="description row align-items-center">
-        <div class="col-12">
-          <p>{{projet.shortdesc}}</p>
-        </div>
-      </div>
-      <div class="projetContainer">
-        <div class="description row justify-content-center">
-          <h4>{{projet.wasAsked}}</h4>
-          <p>{{projet.projectdesc}}</p>
-          <p>{{projet.desc}}</p>
-        </div>
-        <div class="membres row justify-content-around">
-          <div class=" col-12 col-sm-6 structure">
-            <h4>{{projet.structure}}</h4>
-            <li v-for="(member, i) in projet.members" :key="i">{{member}}</li>
-          </div>
-          <div class="col-12 col-sm-6 logiciel">
-            <h4>{{projet.made}}</h4>
-            <li>{{projet.software}}</li>
-          </div>
-        </div>
-        <div class="imgWrapper" id="imgDiv">
-          <div class="imgDiv">
-            <template v-for="(file, index) in projet.images" :key="index">
-              <iframe v-if="file.includes('youtube') || file.includes('youtu.be')" :src="file" class="videoProjet"
-                title="Video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe><!--Si le fichier inclue youtube, il montre une vidéo pour chaque projet qui contient youtube. Sinon, c'est des images-->
-              <img v-else :src="file" :alt="projet.title" class="imageHover" @mouseenter="animationEnter($event)"
-                @mouseleave="animationLeave($event)" />
-            </template>
-          </div>
-        </div>
-      </div>  
+  <div class="descriptionContainer" v-for="projet in displayedProjets" :key="projet.id">
+    <div class="titres projets">
+      <h2>{{projet.title}}</h2>
+      <img src="/imgs/ligne_titre.png" class="lignes" />
     </div>
-    <div class="sectionProcessus">
-        <h2>Le processus</h2>
-        <h3>Le Brainstorm/Moodboard</h3>
-          <img src="./imgs/image_moodboard.png">
-          <p>Durant le brainstorm, nous avions toutes fait nos planches d'inspirations individuellement. Ensuite, nous avons fait un mélange des idées de nous trois et 
-            des idées qu'on préfère dans un moodboard final. Nos inspirations étaient principalement Spiderman, l'esthétique rétro et futuristique. Nous avons aussi ajouté 
-            des éléments qui correspondent au cinéma. Par exemple, le rouleau film avec des films à l'affiche et le clin d'oeil du générique d'UNIVERSAL studios.
-          </p>
-        <h3>L'arborescence</h3>
-          <img src="./imgs/arborescence.png">
-          <p>Ensuite, il faut penser à la navigation du site. Quelle lien mène à quelle page? Ça permet d'éviter de se perdre dans le site et de regrouper les
-            informations similaires dans une même page.</p>
-        <h3>Maquettes filaires</h3>
-          <img src="./imgs/maquettes_filaires.png">
-          <p>La prochaine étape était les maquettes filaires. C'est l'étape où on planifie quel élément va où, comment organiser les informations
-            dans la page, etc. C'est aussi plus facile de visualiser la structure quand c'est le moment de l'intégration HTML/CSS.
-          </p> 
-        <h3>Maquettes graphiques</h3>
-          <img src="./imgs/maquettes_graphiques.png">
-          <p>
-            Les maquettes graphiques est l'étape où on fait le design final des pages. On fait attention au détails, on ajoute les images et on donne de la vie au site.
-            On a eu l'idée d'ajouter des boules avec des dégradés parce que ça fait penser à des planètes et ça fait allusion aux titres des pages inspirés du générique d'
-            UNIVERSAL. 
-          </p>
+    <div class="description row align-items-center">
+      <div class="col-12">
+        <p>{{projet.shortdesc}}</p>
+      </div>
     </div>
+    <div class="projetContainer">
+      <div class="description row justify-content-center">
+        <h4>{{projet.wasAsked}}</h4>
+        <p>{{projet.projectdesc}}</p>
+        <p>{{projet.desc}}</p>
+      </div>
+      <div class="membres row justify-content-around">
+        <div class=" col-12 col-sm-6 structure">
+          <h4>{{projet.structure}}</h4>
+          <li v-for="(member, i) in projet.members" :key="i">{{member}}</li>
+        </div>
+        <div class="col-12 col-sm-6 logiciel">
+          <h4>{{projet.made}}</h4>
+          <li>{{projet.software}}</li>
+        </div>
+      </div>
+      <div class="imgWrapper" id="imgDiv">
+        <div class="imgDiv">
+          <template v-for="(file, index) in projet.images" :key="index">
+            <iframe v-if="file.includes('youtube') || file.includes('youtu.be')" :src="file" class="videoProjet"
+              title="Video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe><!--Si le fichier inclue youtube, il montre une vidéo pour chaque projet qui contient youtube. Sinon, c'est des images-->
+            <img v-else :src="file" :alt="projet.title" class="imageHover" @mouseenter="animationEnter($event)"
+              @mouseleave="animationLeave($event)" />
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sectionProcessus">
+    <h2>Le processus</h2>
+    <h3>Le Brainstorm/Moodboard</h3>
+    <img src="./imgs/image_moodboard.png">
+    <p>Durant le brainstorm, nous avions toutes fait nos planches d'inspirations individuellement. Ensuite, nous avons
+      fait un mélange des idées de nous trois et
+      des idées qu'on préfère dans un moodboard final. Nos inspirations étaient principalement Spiderman, l'esthétique
+      rétro et futuristique. Nous avons aussi ajouté
+      des éléments qui correspondent au cinéma. Par exemple, le rouleau film avec des films à l'affiche et le clin
+      d'oeil du générique d'UNIVERSAL studios.
+    </p>
+    <h3>L'arborescence</h3>
+    <img src="./imgs/arborescence.png">
+    <p>Ensuite, il faut penser à la navigation du site. Quelle lien mène à quelle page? Ça permet d'éviter de se perdre
+      dans le site et de regrouper les
+      informations similaires dans une même page.</p>
+    <h3>Maquettes filaires</h3>
+    <img src="./imgs/maquettes_filaires.png">
+    <p>La prochaine étape était les maquettes filaires. C'est l'étape où on planifie quel élément va où, comment
+      organiser les informations
+      dans la page, etc. C'est aussi plus facile de visualiser la structure quand c'est le moment de l'intégration
+      HTML/CSS.
+    </p>
+    <h3>Maquettes graphiques</h3>
+    <img src="./imgs/maquettes_graphiques.png">
+    <p>
+      Les maquettes graphiques est l'étape où on fait le design final des pages. On fait attention au détails, on ajoute
+      les images et on donne de la vie au site.
+      On a eu l'idée d'ajouter des boules avec des dégradés parce que ça fait penser à des planètes et ça fait allusion
+      aux titres des pages inspirés du générique d'
+      UNIVERSAL.
+    </p>
+  </div>
   <script src="script.js"></script>
 </body>
 
