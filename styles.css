@@ -1,9 +1,9 @@
 @font-face {
-    src: url("fonts/Belgan_Aesthetic.ttf") format('truetype');
+    src: url("./fonts/Belgan_Aesthetic.ttf") format('truetype');
     font-family: "Belgan";
   }
   @font-face {
-    src: url("fonts/Qalisso.otf") format("opentype");
+    src: url("./fonts/Qalisso.otf") format("opentype");
     font-family: "Qalisso";
   }
   * {
