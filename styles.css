@@ -52,6 +52,8 @@
       height: 0;
   }
   .divEtoiles {
+    position: absolute;
+    pointer-events: none;
       width: 100%;
       z-index: -1;
   }
@@ -163,6 +165,7 @@
       padding: 100px 0 200px 0;
   }
   .text p {
+      z-index: 1;
       background-color: #12103a;
       width: 60%;
       padding: 30px;
