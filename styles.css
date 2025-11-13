@@ -129,7 +129,7 @@
   h4 {
     text-align: center;
   }
-  p {
+  p, li {
       color: #FFF9EE;
       font-family: "Belgan";
       font-size: 30px;
