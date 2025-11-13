@@ -39,44 +39,55 @@
         <a href="./index.html"><img src="./imgs/signature.png" class="logo" /></a>
       </div>
     </ul>
+
   </nav><!-- boucle pour chaque projet-->
+  <div class="projectlist">
+    <ul>
+      <li v-for="projet in displayedProjets" :key="projet.id">
+        <a :href="'#' + projet.id">{{ projet.title }}</a>
+      </li>
+    </ul>
+  </div>
   <div class="descriptionContainer" v-for="projet in displayedProjets" :key="projet.id">
-    <div class="titres projets">
-      <h2>{{projet.title}}</h2>
-      <img src="imgs/ligne_titre.png" class="lignes" />
-    </div>
-    <div class="description row align-items-center">
-      <div class="col-12">
-        <p>{{projet.shortdesc}}</p>
+
+    <div :id="projet.id" class="projet">
+      <div class="titres projets">
+        <h2>{{projet.title}}</h2>
+        <img src="imgs/ligne_titre.png" class="lignes" />
       </div>
-    </div>
-    <div class="projetContainer">
-      <div class="description row justify-content-center">
-        <h4>{{projet.wasAsked}}</h4>
-        <p>{{projet.projectdesc}}</p>
-        <p>{{projet.desc}}</p>
-      </div>
-      <div class="membres row justify-content-around">
-        <div class=" col-12 col-sm-6 structure">
-          <h4>{{projet.structure}}</h4>
-          <li v-for="(member, i) in projet.members" :key="i">{{member}}</li>
-        </div>
-        <div class="col-12 col-sm-6 logiciel">
-          <h4>{{projet.made}}</h4>
-          <li>{{projet.software}}</li>
+      <div class="description row align-items-center">
+        <div class="col-12">
+          <p>{{projet.shortdesc}}</p>
         </div>
       </div>
-      <div class="imgWrapper" id="imgDiv">
-        <div class="imgDiv">
-          <template v-for="(file, index) in projet.images" :key="index">
-            <iframe v-if="file.includes('youtube') || file.includes('youtu.be')" :src="file" class="videoProjet"
-              title="Video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe><!--Si le fichier inclue youtube, il montre une vidéo pour chaque projet qui contient youtube. Sinon, c'est des images-->
-            <img v-else :src="file" :alt="projet.title" class="imageHover" @mouseenter="animationEnter($event)"
-              @mouseleave="animationLeave($event)" />
-          </template>
+      <div class="projetContainer">
+        <div class="description row justify-content-center">
+          <h4>{{projet.wasAsked}}</h4>
+          <p>{{projet.projectdesc}}</p>
+          <p>{{projet.desc}}</p>
+        </div>
+        <div class="membres row justify-content-around">
+          <div class=" col-12 col-sm-6 structure">
+            <h4>{{projet.structure}}</h4>
+            <li v-for="(member, i) in projet.members" :key="i">{{member}}</li>
+          </div>
+          <div class="col-12 col-sm-6 logiciel">
+            <h4>{{projet.made}}</h4>
+            <li>{{projet.software}}</li>
+          </div>
+        </div>
+        <div class="imgWrapper" id="imgDiv">
+          <div class="imgDiv">
+            <template v-for="(file, index) in projet.images" :key="index">
+              <iframe v-if="file.includes('youtube') || file.includes('youtu.be')" :src="file" class="videoProjet"
+                title="Video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe><!--Si le fichier inclue youtube, il montre une vidéo pour chaque projet qui contient youtube. Sinon, c'est des images-->
+              <img v-else :src="file" :alt="projet.title" class="imageHover" @mouseenter="animationEnter($event)"
+                @mouseleave="animationLeave($event)" />
+            </template>
+          </div>
         </div>
       </div>
     </div>
