@@ -129,12 +129,16 @@
   h4 {
     text-align: center;
   }
-  p, li {
+  p {
       color: #FFF9EE;
       font-family: "Belgan";
       font-size: 30px;
       display: flex;
       align-items: center;
+  }
+  li {
+    display: flex;
+    justify-content: center;
   }
   #app p {
       text-align: center;
